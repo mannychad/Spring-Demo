@@ -12,9 +12,11 @@ public class UserDAO {
 	
 	
 	private static User user1 = new User("Mary", "Poppins"); 
+	private static User user2 = new User("Bobby", "Poppins"); 
 	public List<User> getUsers() {
 		List<User> users = new ArrayList<User>();
 		users.add(user1);
+		users.add(user2);
 		return users;
 	}
 
