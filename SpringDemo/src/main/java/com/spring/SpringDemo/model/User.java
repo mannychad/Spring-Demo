@@ -4,8 +4,24 @@ public class User {
 	
 	private String firstName;
 	private String lastName;
+	private String id;
 	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public User() {
+		
+	}
 	public User (String firstName, String lastName) {
+		this.firstName =  firstName;
+		this.lastName = lastName;
+	}
+	
+	public User (String id, String firstName, String lastName) {
+		this.id = id;
 		this.firstName =  firstName;
 		this.lastName = lastName;
 	}

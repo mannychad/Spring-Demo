@@ -22,4 +22,13 @@ public class UserService {
 		}
 		return users;
 	}
+	
+	public User getUserById(String id) throws Exception {
+		try {
+			User user = userDAO.getUser(id);
+			return user;
+		}catch(Exception e) {
+			throw e;
+		}
+	}
 }
